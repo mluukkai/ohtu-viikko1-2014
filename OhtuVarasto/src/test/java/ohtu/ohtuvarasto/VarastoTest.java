@@ -62,17 +62,7 @@ public class VarastoTest {
         varasto.otaVarastosta(2);
 
         // varastossa pitäisi olla tilaa 10 - 8 + 2 eli 4
-        assertEquals(4, varasto.paljonkoMahtuu(), vertailuTarkkuus);
+        assertEquals(3, varasto.paljonkoMahtuu(), vertailuTarkkuus);
     }
 
-    @Test
-    public void konstr() {
-        varasto = new Varasto(-1);
-        varasto = new Varasto(0);
-        varasto = new Varasto(1,1);
-        varasto = new Varasto(1,2);
-        varasto = new Varasto(-1,2);
-        varasto = new Varasto(-1,-1);
-        varasto.toString();
-    }
 }
